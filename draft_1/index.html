@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提筆忘字 — Character Amnesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-kanji"><span>提</span><span>筆</span><span>忘</span><span>字</span></div>
+    <span class="label">Japan · Language · 2026</span>
+    <h1>
+      <span class="kanji-title">提筆忘字</span>
+      Character Amnesia
+    </h1>
+    <p>Since the beginning of the digital age, the ability to write kanji has decreased among Japanese people. As people continue to rely on computers and smartphones, they are forgetting how to write kanji that were common to write in the past.</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat-block">
+      <div class="stat-row">
+        <span class="big-num">90.6%</span>
+        <p class="big-label">said digital devices changed how Japanese is used</p>
+      </div>
+      <div class="stat-row">
+        <span class="big-num">89%</span>
+        <p class="big-label">said their ability to write kanji accurately by hand had declined</p>
+      </div>
+      <div class="stat-row">
+        <span class="big-num">89.4%</span>
+        <p class="big-label">said there are fewer opportunities to write by hand</p>
+      </div>
+      <span class="source">Source: Agency for Cultural Affairs of Japan, 2021</span>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<div class="section-1">
+  <div class="section-1-inner">
+    <div class="fade-in">
+      <h2 class="section-title" style="color:var(--ink)">Opportunities to write, <em>1995–2021</em></h2>
+      <p class="section-body">According to the Ministry of Internal Affairs and Communications of Japan, the ownership of digital devices have continued to rise since 1995. At the same time, the Agency of Cultural Affairs of Japan have reported a decline for writing opportunities throughout the nation.</p>
+    </div>
+    <div class="chart-container fade-in">
+      <div class="chart-title">% of People Who Say Writing Opportunities Decreased vs. % of People with Digital Devices</div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-line" style="background:var(--vermillion)"></div> % writing opportunities decreased</div>
+        <div class="legend-item"><div class="legend-line" style="background:var(--gold); opacity:0.6; border-top: 2px dashed var(--gold)"></div> % digital device ownership</div>
+      </div>
+      <svg id="chart1" style="width:100%;overflow:visible"></svg>
+      <div class="chart-source">Source: Agency for Cultural Affairs of Japan · Device data: Ministry of Internal Affairs and Communications of Japan</div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="pull-quote fade-in">
+  <div class="bar"></div>
+  <div>
+    <blockquote>"I don't really write. When I write kanji, I can always generally write it, but it's annoying that I can't write it perfectly."</blockquote>
+    <cite>— University student, age 22, Tokyo · AFP</cite>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section fade-in">
+  <h2 class="section-title">The Tablet Replaces <em>Paper in Schools</em></h2>
+  <p class="section-body">As the use of tablets for education increases in schools, children are getting less opportunities to write despite having rigorous lessons in writing kanji.</p>
+
+  <div class="two-col">
+    <div class="chart-container">
+      <div class="chart-title">Survey of 1,062 Students on their Note-Taking Behavior and their Average Scores on Kanji/Comprehension</div>
+      <svg id="chart2b" style="width:100%;overflow:visible"></svg>
+      <div class="chart-source">Source: University of Tokyo, 2025</div>
+    </div>
+    <div class="chart-container">
+      <div class="chart-title">Writing Preference Among Students in Grades 4–9</div>
+      <svg id="chart2" style="width:100%;overflow:visible"></svg>
+      <div class="chart-source">Source: Child Research Institute of the Hakuhoudou Foundation survey on Japanese children, 2025</div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section fade-in">
+  <h2 class="section-title">Character Amnesia <em>Experienced by All Ages</em></h2>
+  <p class="section-body">With the use of digital devices by all ages in Japan in all aspects of their lives, from domestic life to work, even people above 40 who are well into their senior years see diminished performance in writing kanji.</p>
+
+  <div class="two-col">
+    <div class="chart-container">
+      <div class="chart-title">Kanji Writing Performance in the Kanji Kentei by Age</div>
+      <svg id="chart3" style="width:100%;overflow:visible"></svg>
+      <div class="chart-source">Source: Sadao Otsuka and Toshiya Murai, Nature Research, 2020</div>
+    </div>
+    <div class="chart-container">
+      <div class="chart-title">Average Handwritten Characters per Day by Age Group</div>
+      <svg id="chart4" style="width:100%;overflow:visible"></svg>
+      <div class="chart-source">Source: Agency for Cultural Affairs of Japan — National Language Survey, 2024 (Statistics gathered from secondary analyses)</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <span class="kanji-footer">提 筆 忘 字</span>
+  <div>Character Amnesia</div>
+  <br>
+  <div>Data: Agency for Cultural Affairs of Japan · Ministry of Internal Affairs and Communications of Japan · Child Research Institute of the Hakuhoudou Foundation · Sadao Otsuka and Toshiya Murai, Nature Research · University of Tokyo</div>
+</footer>
+
+<script src="charts.js"></script>
+</body>
+</html>
